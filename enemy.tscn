@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://qabv7j2sppyi"]
+
+[ext_resource type="Texture2D" uid="uid://dm8igsp42m4pt" path="res://Art/enemyWalking_2.png" id="1_anvam"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wdyc6"]
+radius = 47.0
+height = 124.0
+
+[node name="Enemy" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_anvam")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_wdyc6")

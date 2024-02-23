@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqs7s3wmfdsd5"]
+
+[ext_resource type="Texture2D" uid="uid://f6rxh1h847ic" path="res://Art/playerGrey_walk2.png" id="1_1584c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_difkd"]
+radius = 53.0
+height = 128.0
+
+[node name="Player" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1584c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_difkd")
