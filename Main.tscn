@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbiierjhl0e8h"]
+[gd_scene load_steps=6 format=3 uid="uid://dbiierjhl0e8h"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_cncgi"]
 [ext_resource type="PackedScene" uid="uid://cqs7s3wmfdsd5" path="res://Player.tscn" id="1_ni304"]
+[ext_resource type="PackedScene" uid="uid://qabv7j2sppyi" path="res://enemy.tscn" id="2_fn7l5"]
 [ext_resource type="Script" path="res://Player.gd" id="2_ihtj5"]
 [ext_resource type="Script" path="res://HUD.gd" id="3_i114q"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_cncgi")
+Mob_scene = ExtResource("2_fn7l5")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
